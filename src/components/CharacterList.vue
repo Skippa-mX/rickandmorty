@@ -22,6 +22,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="sass" scoped>
+//.character__list
+//  display: flex
+//  flex-flow: row wrap
 </style>
