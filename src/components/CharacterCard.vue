@@ -8,7 +8,7 @@
         <h1 class="card__info__name" >{{character.name}}</h1>
           <div class="card__info__status">
             <div :class="[this.character.status === 'Alive' ? 'alive' : 'dead','status__icon']">
-              {{character.status}} - {{character.species}} - {{character.gender}}
+              Status{{character.status}} Race {{character.species}} Gender{{character.gender}}
             </div>
           </div>
       </div>
@@ -41,16 +41,19 @@ export default {
   display: flex
   flex-flow: row wrap
   border: #151515 2px solid
-  border-radius: 15px
+  border-radius: 150px 0
   margin-top: 10px
   padding: 10px
+  box-shadow: 5px 5px rgba(39, 39, 39, 0.71)
+  background: rgba(63, 130, 243, 0.95)
 
   &__image
     border-right: #151515 2px solid
     padding: 5px
+
     img
       max-height: 200px
-      border-radius: 120px
+      border-radius: 120px 2px 2px 2px
 
   &__info
     display: flex
